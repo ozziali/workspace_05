@@ -1,0 +1,19 @@
+enviornment setup
+
+base:
+https://www.youtube.com/watch?v=whvp0nSy6Y4
+
+
+intellisense-tailwindcss configuration:
+https://stackoverflow.com/questions/61343447/my-tailwind-css-intellisense-plugin-just-isnt-working-on-my-vscode
+ADD to user settings JSON:
+
+"files.associations": {
+  "*.css": "tailwindcss"
+},
+"editor.quickSuggestions": {
+  "strings": true
+}
+
+Using JavaScript and forms
+https://www.infoworld.com/article/2077176/using-javascript-and-forms.html
