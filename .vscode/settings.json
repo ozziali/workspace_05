@@ -6,5 +6,7 @@
 },
 "editor.quickSuggestions": {
     "strings": true
-}
+},
+"editor.tabSize": 2,
+"editor.fontSize": 13
 }
