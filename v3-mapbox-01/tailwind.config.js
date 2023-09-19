@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+
+const FormKitVariants = require('@formkit/themes/tailwindcss')
+
 module.exports = {
   content: [
       "./index.html",
@@ -6,6 +10,7 @@ module.exports = {
       "./src/**/*.{vue, js, jsx, ts, tsx}",
       "./node_modules/flowbite/**/*.js",
       "./node_modules/tailwindcss-animatecss/**/*.js",
+      './src/tailwind-theme.js',
       
       
   ],
@@ -16,5 +21,6 @@ module.exports = {
     require ('flowbite'),
     require ('daisyui'),
     require ('tailwindcss-animatecss'),
+    [FormKitVariants],
   ],
 }
