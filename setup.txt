@@ -14,6 +14,5 @@ ADD to user settings JSON:
 "editor.quickSuggestions": {
   "strings": true
 }
-
-Using JavaScript and forms
-https://www.infoworld.com/article/2077176/using-javascript-and-forms.html
+How To Build Vue.Js Forms With FormKit:
+https://blog.openreplay.com/how-to-build-vuejs-forms-with-formkit/
