@@ -7,9 +7,11 @@
 </template>
 
 <script>
+// Component Importation
 import GreetingMessage from './components/GreetingMessage.vue'
 import RequestForm from './components/RequestForm.vue'
 
+// Component Registration
   export default {
     components: { 
       GreetingMessage,
