@@ -16,3 +16,7 @@ ADD to user settings JSON:
 }
 How To Build Vue.Js Forms With FormKit:
 https://blog.openreplay.com/how-to-build-vuejs-forms-with-formkit/
+
+Vue3 Component Creation/Declaration/Registration:
+see this webpage below?:
+https://www.koderhq.com/tutorial/vue/component/
