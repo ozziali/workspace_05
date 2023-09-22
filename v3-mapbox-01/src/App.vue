@@ -1,30 +1,33 @@
 <template>
   <div>
-<!-- <GreetingMessage />
-<RequestForm /> -->
-<QRReaderRoot />
-<StreamBarcodeReader
-      @decode="(a, b, c) => onDecode(a, b, c)"
-      @loaded="() => onLoaded()">
-</StreamBarcodeReader>
+    <!-- Navigation Components -->
+   <NavigationRouter />
 
-
+    <!-- Page Components -->
+    <GreetingMessage />
+    <RequestForm />
+    <QRReaderRoot />
   </div>
 </template>
 
 <script>
 // Component Importation
-import GreetingMessage from './components/GreetingMessage.vue'
-import RequestForm from './components/RequestForm.vue'
-import QRReaderRoot from './components/QRReaderRoot.vue'
+import NavigationRouter from './components/NavigationRouter.vue';
+import GreetingMessage from './components/GreetingMessage.vue';
+import RequestForm from './components/RequestForm.vue';
+import QRReaderRoot from './components/QRReaderRoot.vue';
+
+
 
 // Component Registration
   export default {
-    components: { 
+    components: {
+      NavigationRouter, 
       GreetingMessage,
       RequestForm,
-      QRReaderRoot
-
+      QRReaderRoot,
+   
+   
     },
   }
 </script>

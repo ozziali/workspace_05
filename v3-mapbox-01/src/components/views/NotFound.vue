@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello from a component</h1>
+    <h1>404</h1>
   </div>
 </template>
 
@@ -10,6 +10,6 @@
   }
 </script>
 
-<style  scoped>
+<style lang="scss" scoped>
 
 </style>

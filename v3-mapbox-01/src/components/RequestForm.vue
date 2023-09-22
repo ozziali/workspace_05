@@ -1,3 +1,6 @@
+<!-- Tutorial & code obtained from: -->
+<!-- https://blog.openreplay.com/how-to-build-vuejs-forms-with-formkit/ -->
+
 <template>
   <FormKit
       type="form"
