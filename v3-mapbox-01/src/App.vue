@@ -2,12 +2,19 @@
   <div>
     <!-- Navigation Components -->
    <NavigationRouter />
+    <div>{{ name }}</div>
+
 
     <!-- Page Components -->
+
+    
     <GreetingMessage />
     <RequestForm />
     <!-- <QRReaderRoot /> -->
   </div>
+
+
+
 </template>
 
 <script>
@@ -22,13 +29,21 @@ import NavigationRouter from './components/NavigationRouter.vue';
 // Component Registration
   export default {
     components: {
-      NavigationRouter, 
-      // GreetingMessage,
-      // RequestForm,
-      // QRReaderRoot,
-   
-   
+    NavigationRouter,
+  
+},
+    data() {
+      return {
+        name: 'Vue.js'
+      }
     },
+    methods: {
+      greet(event) {
+      },
+	    say(message) {
+    	  alert(message)
+  	  }
+    } 
   }
 </script>
 

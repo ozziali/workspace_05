@@ -1,0 +1,67 @@
+<template>
+
+  <div style="text-align: center;">
+    <h1 style="color:green;">
+        GeeksforGeeks
+    </h1>
+    <h2>
+        DOM Button Property
+    </h2>
+    <p>Click the button to create a button.</p>
+    <button class="btn btn-primary"  v-on:click="geek()">
+        Press me!
+    </button>
+    <h2>"{{ appStatus.currentStatus }}"</h2>
+    <br><br>
+    <div id="CFG"></div>
+   
+      <!-- script to create new button -->
+  
+  </div>
+</template>
+
+<script>
+ 
+    
+  
+  export default {
+    data() {
+      return {
+        appStatus: {
+         currentStatus: '', 
+        },
+        componentName: 'Create Button',
+      }
+    },
+    methods: {
+      geek() {
+        
+        
+
+        // get the dom element to be used for the new button
+        let myDiv = document.getElementById("CFG");
+
+        // creating button element
+        let button = document.createElement('BUTTON');
+
+        // creating text to be displayed on button
+        let text = document.createTextNode("Button");
+          
+          // appending text to button
+          button.appendChild(text);
+          
+          // appending button to div
+          myDiv.appendChild(button);
+          
+          // add button style css
+          button.className = "btn btn-secondary";
+
+        this.appStatus.currentStatus = button;
+      }
+    },
+  }
+</script>
+
+<style scoped>
+
+</style>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Home</h1>
+    <h1> {{ dynamicInput }}</h1>
     <GreetingMessage />
   </div>
 </template>
@@ -11,6 +12,11 @@
   
   
   export default {
+    data() {
+      return {
+        dynamicInput: 'i am a' + ' ' +window.location
+      };
+    },
     components: {
   
       GreetingMessage,

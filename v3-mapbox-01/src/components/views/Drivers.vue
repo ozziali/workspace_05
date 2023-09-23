@@ -1,14 +1,17 @@
 <template>
   <div>
     <h1>Drivers</h1>
+    <CreateDrivers />
   </div>
 </template>
 
 <script>
-  const currentPath = ref(window.location.hash);
-  
+  import CreateDrivers from '../drivers/CreateDrivers.vue';
+
   export default {
-    
+    components: {
+      CreateDrivers
+    },
   }
 </script>
 
