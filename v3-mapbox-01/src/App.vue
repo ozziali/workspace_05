@@ -6,16 +6,16 @@
     <!-- Page Components -->
     <GreetingMessage />
     <RequestForm />
-    <QRReaderRoot />
+    <!-- <QRReaderRoot /> -->
   </div>
 </template>
 
 <script>
 // Component Importation
 import NavigationRouter from './components/NavigationRouter.vue';
-import GreetingMessage from './components/GreetingMessage.vue';
-import RequestForm from './components/RequestForm.vue';
-import QRReaderRoot from './components/QRReaderRoot.vue';
+// import GreetingMessage from './components/GreetingMessage.vue';
+// import RequestForm from './components/RequestForm.vue';
+// import QRReaderRoot from './components/QRReaderRoot.vue';
 
 
 
@@ -23,9 +23,9 @@ import QRReaderRoot from './components/QRReaderRoot.vue';
   export default {
     components: {
       NavigationRouter, 
-      GreetingMessage,
-      RequestForm,
-      QRReaderRoot,
+      // GreetingMessage,
+      // RequestForm,
+      // QRReaderRoot,
    
    
     },

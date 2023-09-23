@@ -5,6 +5,8 @@
 </template>
 
 <script>
+  const currentPath = ref(window.location.hash);
+  
   export default {
     
   }
