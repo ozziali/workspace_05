@@ -1,3 +1,14 @@
 Absolute and Relative Pathnames in UNIX:
 https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
 
+   "\t\tname: '${name}',",
+										"\t\tcomponents: {"
+										"\t\t},",
+                                        "\t\tmethods: {"
+										"\t\t},",
+										"\t\tcomputed: {"
+										"\t\t},",
+										"\t\tdata() {"
+											"\t\t\treturn {"
+											"\t\t\t}",		
+										"\t\t},",

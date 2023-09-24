@@ -8,8 +8,8 @@
     <!-- Page Components -->
 
     
-    <GreetingMessage />
-    <RequestForm />
+ 
+    
     <!-- <QRReaderRoot /> -->
   </div>
 
