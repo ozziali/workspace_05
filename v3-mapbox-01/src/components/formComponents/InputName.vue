@@ -4,7 +4,7 @@
     #default="{ value }"
     form-class="outer-container"
     :config="{
-      validationVisibility: 'dirty',
+    validationVisibility: 'dirty',
     }"
   >
     <h1>Create New Driver</h1>
@@ -26,6 +26,7 @@
         validation="required|length:3"
       ></FormKit>
     </div>
+    <h2>{{ value }}</h2>
   </FormKit>
 </template>
 
