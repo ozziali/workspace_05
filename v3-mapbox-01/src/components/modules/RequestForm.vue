@@ -92,7 +92,7 @@ export default {
 <style>
   .outer-container {
       width: 400px;
-      border: 1px solid #e4e4e4;
+      border: 1px solid #914e4e;
       padding: 1.5em;
       border-radius: 1em;
       margin: 0 auto 1em auto;
@@ -104,7 +104,8 @@ export default {
   }
 
   h1,
-  h3 {
+  h3,
+  h2 {
       text-align: center;
   }
 </style>
