@@ -1,9 +1,10 @@
 <template>
   <div class="outer-c grid grid-flow-row">
     <h3>I'm the Parent </h3>
+    <div class="flex justify-center">child value: {{ value }}</div> 
     <ChildItem :childValue="getChildValue"/>
   </div>
- <div>child value: {{ value }}</div> 
+ 
 </template>
 
 <script>

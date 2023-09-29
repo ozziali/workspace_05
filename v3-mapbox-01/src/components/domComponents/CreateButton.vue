@@ -37,9 +37,6 @@
     },
     methods: {
       geek() {
-        
-        
-
         // get the dom element to be used for the new button
         let myDiv = document.getElementById("CFG");
 

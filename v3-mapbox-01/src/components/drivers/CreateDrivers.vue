@@ -21,6 +21,7 @@ import InputName from '../formComponents/InputName.vue';
       }
     },
     methods: {
+      
     }
   }
 </script>

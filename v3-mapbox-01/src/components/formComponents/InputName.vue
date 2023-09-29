@@ -5,6 +5,7 @@
   3.  @submit's onSubmit function as a method return-->
   <FormKit
     v-model="formData"
+    v-on:click="childValue(aProperty)" 
     @submit="onSubmit"
     type="form"
     #default="{ value }"
@@ -21,7 +22,7 @@
     <div class="input-group">
       <FormKit
         type="text"
-        name="name"
+        name="firstname"
         label="First name"
         placeholder="John"
         validation="required|length:3"
@@ -53,13 +54,15 @@
     components: {
     },
     props: {
-     
+    
+      nameValue: Function
     },
     data() {
       return {
         formData: {},
         surName: '',
         text: '',
+        aProperty: "some-value"
       }
     },
     methods: {
