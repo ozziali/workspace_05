@@ -3,12 +3,12 @@
     <!-- Navigation Components -->
    <NavigationRouter />
     <h3 class="outer-container">{{ name }}</h3>
-
+<h2>hello</h2>
 
     <!-- Page Components -->
 
-    <ParentItem />
- 
+    <!-- <ParentItem />
+  -->
     
     <!-- <QRReaderRoot /> -->
   </div>

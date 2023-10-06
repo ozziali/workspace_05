@@ -44,7 +44,7 @@
         let button = document.createElement('BUTTON');
 
         // creating text to be displayed on button
-        let text = document.createTextNode("Button");
+        let text = document.createTextNode("button");
           console.log(text)
 
           // appending text to button
@@ -55,7 +55,7 @@
           myDiv.appendChild(button);
           
           // add button style css
-          button.className = "btn btn-secondary";
+          //button.className = "btn btn-primary";
 
         this.appStatus.currentStatus = button;
 

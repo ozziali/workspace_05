@@ -2,7 +2,7 @@
   <div class='outer-cont grid grid-rows-2 grid-flow-col'>
     <h3>I am a Child Component</h3>
     <div class="flex justify-center">
-      <button v-on:click="childValue(aProperty)" class="btn btn-primary " >send a value</button>
+    <button v-on:click="childValue(aProperty)" class="btn btn-primary " >send a value</button>
     </div>
   </div>
 </template>
@@ -41,7 +41,9 @@
 
   h1,
   h3,
-  h2 {
+  h2,
+  h4,
+  h5 {
     text-align: center;
   }
 </style>

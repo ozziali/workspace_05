@@ -3,18 +3,21 @@
     <h3>I'm the Parent </h3>
     <div class="flex justify-center">child value: {{ value }}</div> 
     <ChildItem :childValue="getChildValue"/>
+    <InputName />
   </div>
  
 </template>
 
 <script>
+import InputName from '../formComponents/InputName.vue';
 import ChildItem from './ChildItem.vue';
 
   export default {
     name: 'Parent',
-    components: { 
-      ChildItem 
-    },
+    components: {
+    ChildItem,
+    InputName
+},
     data() {
         return {
           value: ''

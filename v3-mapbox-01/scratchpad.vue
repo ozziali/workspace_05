@@ -18,3 +18,20 @@ myDiv.appendChild(button);
 button.className = "btn btn-secondary";
 
 </script>
+
+<template>
+  <div>
+    <input type="text" v-model="inputText" />
+    <button>{{ inputText }}</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      inputText: "",
+    };
+  },
+};
+</script>
