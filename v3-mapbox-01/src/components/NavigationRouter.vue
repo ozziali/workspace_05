@@ -1,6 +1,7 @@
 <template>
     <a href="#/">Home</a> |
     <a href="#/drivers">Drivers</a> |
+    <a href="#/shopping">Shopping</a> |
     <a href="#/about">About</a> |
     <a href="#/non-existent-path">Broken Link</a>
     <component :is="currentView" />
@@ -10,12 +11,14 @@
 import { ref, computed } from 'vue'
 import Home from './views/Home.vue'
 import Drivers from './views/Drivers.vue'
+import Shopping from './views/Shopping.vue'
 import About from './views/About.vue'
 import NotFound from './views/NotFound.vue'
 
 const routes = {
   '/': Home,
   '/drivers': Drivers,
+  '/shopping': Shopping,
   '/about': About,
 }
 

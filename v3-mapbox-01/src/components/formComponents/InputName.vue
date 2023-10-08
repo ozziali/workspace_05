@@ -17,9 +17,7 @@
     @submit="onSubmit"
     type="form"
     #default="{ value }"
-    :config="{
-    validationVisibility: 'dirty'
-    }"
+    :config="{validationVisibility: 'dirty'}"
   >
   <h1>inputName component</h1>
   <h3>Fill out the the name below:</h3>

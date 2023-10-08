@@ -1,5 +1,5 @@
 <template>
-  <h2>jjjj</h2>
+
  
   <div>
     <input type="text" :name="inputName" :placeholder="inputPlaceholder" v-model="inputText" />
@@ -10,7 +10,7 @@
     <div v-for="(button, index) in buttons" :key="index">
     <button>{{ button }}</button>
   </div>
-  <div>hello</div>
+
 </template>
 
 
@@ -46,19 +46,22 @@ export default {
     };
   },
   methods: {
-    // adds 
+ 
     addToObject() {
       for (var key in this.driversObject) {
         console.log(key); // logs keys in myObject
         console.log(this.driversObject[key]); // logs values in myObject
       }
-      // check: dataObjectDrivers.js' can be read 
+      // check: dataObjectDrivers.js' can be read? 
       // isWorking: [Yes]
       console.log({drivers})
+
       // the input field's data -> dataObject J_object 
       this.dataObject[this.inputName] = this.inputText;
+      
       // isWorking: [Yes]
       console.log(this.dataObject)
+      
       //  { Firstname: Usman, Firstname}
       this.driverssObject = this.dataObject
       console.log(this.driversObject)

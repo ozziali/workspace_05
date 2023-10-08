@@ -1,15 +1,15 @@
 <template>
   <div>
     <!-- Navigation Components -->
-   <NavigationRouter />
-    <h3 class="outer-container">{{ name }}</h3>
-<h2>hello</h2>
+    <NavigationRouter />
+
+
+
+    <!-- <h3 class="outer-container">{{ name }}</h3> -->
+    
 
     <!-- Page Components -->
-
-    <!-- <ParentItem />
-  -->
-    
+    <!-- <ParentItem /> -->
     <!-- <QRReaderRoot /> -->
   </div>
 
@@ -20,7 +20,7 @@
 <script>
 // Component Importation
 import NavigationRouter from './components/NavigationRouter.vue';
-import ParentItem from './components/drivers/ParentItem.vue';
+// import ParentItem from './components/drivers/ParentItem.vue';
 // import GreetingMessage from './components/GreetingMessage.vue';
 // import RequestForm from './components/RequestForm.vue';
 // import QRReaderRoot from './components/QRReaderRoot.vue';
@@ -32,11 +32,11 @@ import ParentItem from './components/drivers/ParentItem.vue';
     components: {
 
       NavigationRouter,
-      ParentItem
+      // ParentItem
 },
     data() {
       return {
-        name: 'Vue.js'
+        // name: 'Vue.js'
       }
     },
     methods: {

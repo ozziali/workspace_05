@@ -34,4 +34,14 @@ export default {
     };
   },
 };
+
+
+async created() {
+  try {
+    const res = await axios.get(`http://localhost:3000/items`);
+    this.items = res.data;
+    } catch (error) {
+    console.log(error);
+  },
+} 
 </script>
