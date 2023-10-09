@@ -1,27 +1,27 @@
+
 <template>
   <div>
-    <div>
-      <h3>Shopping</h3>
-    </div>
-    <div>
-    <!-- <ShoppingList /> -->
-    <!-- <DriversForm /> -->
-    </div>
+    <h1>Tasks</h1>
+    <CreateDrivers />
+    <ViewDrivers />
   </div>
 </template>
 
 <script>
-import DriversForm from '../formComponents/DriversForm.vue';
-// import ShoppingList from '../formComponents/ShoppingList.vue';
+import CreateTasks from '../tasks/!CreateTasks.vue';
+// import ViewDrivers from '../tasks/!ViewTaskss.vue';
 
-  export default {
-    data() {
-        return {};
-    },
-    methods: {},
-    components: { DriversForm }
+export default {
+  components: {
+    CreateTasks,
+    // ViewTasks
+  },
 }
 </script>
+
+<style scoped>
+
+</style>
 
 <style >
 .outer-container{

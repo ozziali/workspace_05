@@ -1,30 +1,23 @@
 <!-- parent -->
 <template>
   <div class="outer-c grid grid-flow-row">
-    <h3>CreateDrivers Component</h3>
+    <h3>CreateTasks Component</h3>
   
     <!-- child -->
-    <FormDrivers />
-    <FormInputDriver />
-    <DriversForm />
+    <FormTasks />
+    
+    
   
   </div>
   </template>
   
   
   <script>
-  import FormDrivers from '../formComponents/FormDrivers.vue';
-  import FormInputDriver from '../formComponents/FormInputDriver.vue';
-  import DriversForm from '../formComponents/DriversForm.vue';
-  
+  import FormTasks from '../formComponents/!FormTasks.vue';
+
  
     export default {
-      components: {
-  
-      FormInputDriver,
-      FormDrivers,
-      DriversForm
-  },
+      components: { FormTasks },
       data() {
         return {
           

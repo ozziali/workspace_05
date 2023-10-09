@@ -44,4 +44,24 @@ async created() {
     console.log(error);
   },
 } 
+
+[ "Ali",
+"Muhamad",
+"HealthPlus - Clare Rd",
+"Delivered",
+[ "Janet", "Barker", "20 Hengrove Rd", "Bristol", "BS4 2PS", "1", "CD"],
+[ "Susan", "Philip", "99 Cowbridge Rd East", "Cardiff", "CF11 9AF", "3", "NCD"],
+],
+[ "Dean",
+"Jamal",
+"HealthPlus - Clare Rd",
+"in-progress",
+[ "Janet", "Barker", "20 Hengrove Rd", "Bristol", "BS4 2PS", "1", "CD",
+   [1001 , 1002, 1003]
+],
+[ "Susan", "Philip", "99 Cowbridge Rd East", "Cardiff", "CF11 9AF", "3", "NCD", 
+   [1001 , 1002, 1003]
+]
+]
+
 </script>

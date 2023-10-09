@@ -1,57 +1,8 @@
+<!-- child: of CreateDrivers.vue -->
 <template>
   <div class="outer-container">
     <div>
-      <h4 class="form-label">[FormDrivers]</h4>
-    </div>
-    <div class='form'>
-      <!-- Always specify a name  -->
-      <!-- and optionally an id if you need to target a specific input -->
-      <!-- @submit="SubmitHandler" -->
-      <FormKit
-        v-model="formDaata"
-        form-class=""
-        submit-label='Submit'
-        name="driverinputform"
-        id="driverinputform"
-        :actions="true"
-       
-        @submit="addItem()"
-        type="form"
-        #default="{ value }"
-        :config="{validationVisibility: 'dirty'}"
-      >
-      <!-- @keyup.enter="addItem"   -->
-        <FormKit
-          v-model="itemName"
-          
-          type="text" 
-          name="firstname" 
-          id="firstname"
-          placeholder="John"
-          label="First Name"
-          help="Type your first name"
-          validation="required|length:3"
-          validation-visibility=""
-        />
-        <!-- @keyup.enter="addItem"  -->
-        <FormKit 
-          v-model="itemLastName"
-          
-          type="text" 
-          name="lasttname" 
-          id="lastname"
-          placeholder="Smith"
-          label="Last Name" 
-          help="Type your last name"
-          validation="required|length:3" 
-        />
-        <!-- submit button built using below reference: -->
-        <!-- https://formkit.com/inputs/submit -->
-        <!-- <FormKit 
-          type="submit"
-          label="Create"
-        /> -->
-      </FormKit>
+      <h4 class="form-label">[LookDrivers]</h4>
     </div>
     <div>
       <h4>formData:{{ formDaata }}</h4>
@@ -65,12 +16,25 @@
           @click="boughtItem(item.id)"
           @dblclick="removeItem(item.id)"
         >
-          {{ item.firstname }}
+         {{ item.firstname }}
           {{ item.lastname }}
           {{ item.id}}
         </li>
       </ul> 
     </div>
+    <div>
+      <div>
+    <button 
+      v-for="(item, index) in items" 
+      :key="index"
+      class="btn btn-primary margin-button"
+    >
+      {{ item.firstname }}
+    </button>
+    <button type="button" class="btn btn-danger">Primary</button>
+  </div>
+    </div>
+    
   </div>
 </template>
 
@@ -96,7 +60,7 @@ import axios from "axios";
       const res = await axios.get(`http://localhost:3000/drivers`);
       this.items = res.data;
       this.res = res;
-      console.log(res.config)
+      // console.log(res.config)
      
     } catch (error) {
       console.log(error);
@@ -170,5 +134,11 @@ import axios from "axios";
   display: inline-block !important;
   background-color: #444;
   color: white;
+}
+.margin-button{
+  margin: 10px 10px 10px 10px;
+}
+.btn{
+  text-transform: none !important;
 }
 </style>
