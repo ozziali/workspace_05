@@ -66,7 +66,7 @@
       </FormKit>
     </div>
     <div>
-      <h5>formData:{{ formDaata }}</h5>
+      <h4>formData:{{ formDaata }}</h4>
     </div>
     <div>
       <ul>
@@ -97,12 +97,11 @@ import axios from "axios";
         formDaata: {},
 
         // axios code datatypes
-        items: {},
+        items: [],
         itemName: "",
         itemLastName: "",
         itemPharmacyName: "",
         res: [],
-        drivers:{},
       }
     },
     // This GET method automatically on page load runs 
@@ -111,22 +110,13 @@ import axios from "axios";
     try {
       const res = await axios.get(`http://localhost:3000/drivers`);
       this.items = res.data;
-      
-      //this.items = res.data.drivers[0];
+      this.res = res;
 
-
-      //console.log(res.data.drivers) // object traversal is needed
-      
-      //single JSON
-      // res is a object, res.data is a array
-      // this.items is a array
-      //this.items = res.data; // code single
-      // this.res = res;        // code single
-      //console.log(res) // res axios object
-      // console.log(res.data[0]) // points to a array within res axios object 
-      // console.log(this.res) // proxy object
-      // console.log(this.res.data[0]) // proxy object structure is copy of res axios object
-      // console.log(this.items) // proxy array
+      console.log(res) // res axios object
+      console.log(res.data[0]) // points to a array within res axios object 
+      console.log(this.res) // proxy object
+      console.log(this.res.data[0]) // proxy object structure is copy of res axios object
+      console.log(this.items) // proxy array
      
     } catch (error) {
       // console.log(error);
@@ -156,32 +146,18 @@ import axios from "axios";
         });
       },
       async addItem() {
-        // You're adding a new todo to the API using axios.post.
         const res = await axios.post(`http://localhost:3000/drivers`, {
-           
-          //this works
-          "data":{firstname: this.itemName,
-            lastname: this.itemLastName,
-            pharmacyname: this.itemPharmacyName
-           }
-          //not working
-          // drivers :{
-          //   firstname: this.itemName,
-          //   lastname: this.itemLastName,
-          //   pharmacy: this.itemPharmacyName,
-          // },
-        });
+          //firstname: this.itemName,
+          //lastname: this.itemLastName,
+          //pharmacy: this.itemPharmacyName,
+          
+       
 
-        // You're then updating the local state of the component by adding 
-        // the new todo to the todos array.
-        console.log(this.items)
-        console.log(res.data)
+        });
         this.items = [...this.items, res.data];
-        console.log(this.items) 
-        //You're then clearing the todoName property.
         this.itemName = "";
         this.itemLastName = "";
-        
+        this.itemPharmacyName="";
       },
       //on double clicking the item, it will call removeItem(id) method
       removeItem(id) {
@@ -219,8 +195,5 @@ import axios from "axios";
   display: inline-block !important;
   background-color: #444;
   color: white;
-}
-h5, li {
-  font-size: 13px;
 }
 </style>

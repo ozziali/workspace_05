@@ -47,10 +47,10 @@ import axios from "axios";
         formDaata: {},
 
         // axios code datatypes
-        items: {},
+        items: [],
         itemName: "",
         itemLastName: "",
-        //res: [],
+        res: [],
       }
     },
     // This GET method automatically on page load runs 
@@ -59,8 +59,8 @@ import axios from "axios";
     try {
       const res = await axios.get(`http://localhost:3000/drivers`);
       this.items = res.data;
-      //this.res = res;
-      console.log(res)
+      this.res = res;
+      // console.log(res.config)
      
     } catch (error) {
       console.log(error);
@@ -140,8 +140,5 @@ import axios from "axios";
 }
 .btn{
   text-transform: none !important;
-}
-h5, li {
-  font-size: 13px;
 }
 </style>

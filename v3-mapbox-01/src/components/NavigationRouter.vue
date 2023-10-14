@@ -1,7 +1,7 @@
 <template>
     <a href="#/">Home</a> |
     <a href="#/drivers">Drivers</a> |
-    <a href="#/tasks">Shopping</a> |
+    <a href="#/tasks">Tasks</a> |
     <a href="#/about">About</a> |
     <a href="#/non-existent-path">Broken Link</a>
     <component :is="currentView" />

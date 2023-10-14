@@ -2,8 +2,8 @@
 <template>
   <div>
     <h1>Tasks</h1>
-    <CreateDrivers />
-    <ViewDrivers />
+    <CreateTasks />
+    <!-- <ViewDrivers /> -->
   </div>
 </template>
 
